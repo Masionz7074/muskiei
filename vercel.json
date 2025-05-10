@@ -1,0 +1,21 @@
+{
+  "version": 2, stored_password_hash_bytes):
+                # --- Login Successful ---
+                # In a real app, you'd create a session or issue a token here
+                print(f"User logged in: {username}") # Logs visible in Vercel dashboard
+                return json.dumps({"message": "Login successful!", "username": user_data.get('username')}), 200, headers
+
+            else:
+                # Password doesn't match,
+  "builds": [
+    { "src": "api/*.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/ hash
+                return json.dumps({"error": "Invalid username or password"}), 401, headers # 401 Unauthorized
+
+        except json.JSONDecodeError:
+             return json.dumps({"error": "api/$1" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}
